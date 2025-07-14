@@ -28,7 +28,7 @@ jobs:
 
     - name: Run containerized tests
       run: |
-        docker run -d --name test-container -p 8080:8080 $IMAGE_NAME:$IMAGE_TAG
+        docker run -d --name test-container -p 3003:3003 $IMAGE_NAME:$IMAGE_TAG
         sleep 5 # give the app time to start
         curl --fail http://localhost:3003 || (docker logs test-container && exit 1)
 

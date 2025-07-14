@@ -1,3 +1,25 @@
+✅ What You've Completed
+
+🚀 Application
+Built a Node.js app with Express
+Configured it to run inside a Docker container
+
+🐳 Docker
+Wrote a Dockerfile
+Built and tested images locally
+Published image to Docker Hub
+
+🔁 CI/CD Pipeline with GitHub Actions
+Automated Docker builds on every push
+Ran containerized health checks (curl)
+Pushed to Docker Hub using secure secrets
+
+☁️ Deployment
+Pulled the image from Docker Hub on another system
+Ran the container successfully with correct port mapping
+
+------------------------------------------
+
 📦 Build the Docker image on every push
 ✔️ You set up a GitHub Actions workflow triggered by push to the main branch, and it builds the Docker image using docker build.
 
@@ -10,18 +32,13 @@
 🔐 Make sure secrets (like Docker Hub credentials) are securely stored and used
 ✔️ You stored your Docker Hub username and access token in GitHub Secrets and referenced them like this:
 
-yaml
-Copy
-Edit
 username: ${{ secrets.DOCKER_USERNAME }}
 password: ${{ secrets.DOCKER_PASSWORD }}
+
 🚀 Trigger the workflow from a test repo and observe logs
-✔️ You:
 
 Pushed code from your test repo
-
 Observed workflow runs in the Actions tab
-
 Saw full logs, including Docker build, run, test, and push output
 
 ✅ Final Verdict:

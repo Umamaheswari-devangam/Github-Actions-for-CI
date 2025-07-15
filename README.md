@@ -15,8 +15,8 @@ Ran containerized health checks (curl)
 Pushed to Docker Hub using secure secrets
 
 ☁️ Deployment
-Pulled the image from Docker Hub on another system
-Ran the container successfully with correct port mapping
+Pulled the image from Docker Hub on another system: docker pull your-dockerhub-username/docker-ci-image:latest
+Ran the container successfully with correct port mapping: docker run -p 3003:3003 your-dockerhub-username/docker-ci-image
 
 ------------------------------------------
 
